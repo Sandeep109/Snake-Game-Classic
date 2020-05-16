@@ -5,9 +5,7 @@ var w;
 var h;
 var score = 0;
 
-function preload(){
-  bg = loadImage("bg.jpg")
-}
+
 
 function setup() {
   createCanvas(400, 400);
@@ -45,7 +43,7 @@ function draw(){
 
 
     scale(rez);
-background(bg);
+background(255);
 if (snake.eat(food)) {
   foodLocation();
   score++;
