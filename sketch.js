@@ -42,10 +42,7 @@ function keyPressed() {
 
 function draw(){
 
-fill("gold");
-stroke("gold")  
-textSize(1);
-text("SCORE : "+score,2,1);
+
 
     scale(rez);
 background(bg);
@@ -53,7 +50,12 @@ if (snake.eat(food)) {
   foodLocation();
   score++;
 }
-
+  
+fill("gold");
+stroke("gold")  
+textSize(1);
+text("SCORE : "+score,2,1);
+  
 snake.update();
 snake.display();
 
