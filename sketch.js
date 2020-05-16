@@ -6,7 +6,6 @@ var h;
 var score = 0;
 
 
-
 function setup() {
   createCanvas(400, 400);
   w = floor(width / rez);
@@ -40,6 +39,7 @@ function keyPressed() {
 
 function draw(){
 
+  
 
 
     scale(rez);
@@ -48,12 +48,8 @@ if (snake.eat(food)) {
   foodLocation();
   score++;
 }
-  
-fill("gold");
-stroke("gold")  
 textSize(1);
 text("SCORE : "+score,2,1);
-  
 snake.update();
 snake.display();
 
